@@ -19,7 +19,10 @@ public class FlightConroler {
 	private FlightService flightService;
 	
 	@GetMapping("/")
-	public List<Flight> searchFlights(@RequestParam String departureAirport,)
+	public List<Flight> searchFlights(@RequestParam String departureAirport,@RequestParam String arrivalAirport){
+		return flightService.searchFlights(departureAirport, arrivalAirport);
+		
+	}
 	
 
 }
