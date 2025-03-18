@@ -19,6 +19,10 @@ public class Flight {
 	private String flightNumber;
 	private String departureAirport;
 	private String arrivalAirport;
+	private String departureTime;
+	private String arrivalTime;
+	private double price;
+	private int availableSeats;
 	
 	
 
