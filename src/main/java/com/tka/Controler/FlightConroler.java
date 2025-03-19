@@ -26,12 +26,11 @@ public class FlightConroler {
 		return flightService.addFlight(flight);
 	}
 	
-	
 	@GetMapping("/search")
 	public List<Flight> searchFlights(@RequestParam String departureAirport,@RequestParam String arrivalAirport){
-		return flightService.searchFlights(departureAirport, arrivalAirport);
-		
+		return flightService.searchFlights(departureAirport, arrivalAirport);	
 	}
 	
-
-}
+	
+	
+} 
