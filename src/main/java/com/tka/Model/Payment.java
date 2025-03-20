@@ -17,7 +17,7 @@ public class Payment {
 	@GeneratedValue (strategy =  GenerationType.IDENTITY)
 	private Long id;
 	private Long bookingId;
-	private Long PaymentgMethod;
+	private Long PaymentMethod;
 	private double amount;
 	private String status;
 
