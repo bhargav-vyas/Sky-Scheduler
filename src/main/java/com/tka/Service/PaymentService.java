@@ -1,10 +1,11 @@
 package com.tka.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.tka.Dao.PaymentRepository;
 import com.tka.Model.Payment;
-
+@Service
 public class PaymentService {
 	 @Autowired
 	 private PaymentRepository paymentRepository;
