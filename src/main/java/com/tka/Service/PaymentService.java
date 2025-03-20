@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 
 import com.tka.Dao.PaymentRepository;
 import com.tka.Model.Payment;
+
+import jakarta.transaction.Transactional;
 @Service
 public class PaymentService {
 	 @Autowired
@@ -22,10 +24,17 @@ public class PaymentService {
 		return paymentRepository.save(payment);
 	}
 
-
-	public static Payment getPaymentById(Long id) {
-	
-		return PaymentRepository.findById(id).orElse(null);
+@Transactional
+	public Payment getpaymentById(Long id) {
+		
+		return paymentRepository.getById(id);
 	}
+
+
+	
+
+
+
+
 
 }
