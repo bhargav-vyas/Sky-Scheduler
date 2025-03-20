@@ -7,6 +7,4 @@ import com.tka.Model.Payment;
 @Repository
 
 public interface PaymentRepository extends JpaRepository<Payment, Long> {
-	
-
 }

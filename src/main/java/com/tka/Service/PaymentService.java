@@ -22,4 +22,10 @@ public class PaymentService {
 		return paymentRepository.save(payment);
 	}
 
+
+	public static Payment getPaymentById(Long id) {
+	
+		return PaymentRepository.findById(id).orElse(null);
+	}
+
 }
