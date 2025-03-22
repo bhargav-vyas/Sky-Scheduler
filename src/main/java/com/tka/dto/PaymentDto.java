@@ -18,6 +18,13 @@ public class PaymentDto {
 	
 
 }
+	
+	@Override
+	public String toString() {
+		return "PaymentDto [bookingId=" + bookingId + ", PaymentMethod=" + PaymentMethod + ", amount=" + amount
+				+ ", status=" + status + "]";
+	}
+
 	public Long getBookingId() {
 		return bookingId;
 	}

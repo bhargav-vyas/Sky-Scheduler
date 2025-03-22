@@ -26,17 +26,7 @@ public class PaymentController {
 	@PostMapping("/process")
 	public Payment processPayment(@RequestBody Payment payment) {
 		return paymentService.processPayment(payment);
-	}
-	@PostMapping("/process-dto")
-	public Payment processPayment (@Valid @RequestBody PaymentDto paymentDto ) {
-		Payment payment = new Payment();
-		payment.setBookingId(paymentDto).getBookingId()
-		return ;
-		
-	}
-	
-	
-	
+	}	
 	@GetMapping("/{id}")
 	public Payment getpaymentById(@PathVariable Long  id) {
 		return paymentService.getpaymentById(id);
