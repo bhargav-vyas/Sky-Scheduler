@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.tka.Dao.PaymentRepository;
 import com.tka.Model.Payment;
 import com.tka.Service.PaymentService;
+import com.tka.dto.PaymentDto;
+
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/payments")
@@ -24,8 +27,18 @@ public class PaymentController {
 	public Payment processPayment(@RequestBody Payment payment) {
 		return paymentService.processPayment(payment);
 	}
+	@PostMapping("/process")
+	public Payment processPayment (@Valid @RequestBody PaymentDto paymentDto ) {
+		return null;
+		
+	}
+	
+	
+	
 	@GetMapping("/{id}")
 	public Payment getpaymentById(@PathVariable Long  id) {
 		return paymentService.getpaymentById(id);
 	}
+	
+	
 }
