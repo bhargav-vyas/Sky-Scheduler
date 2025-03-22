@@ -27,7 +27,7 @@ public class PaymentController {
 	public Payment processPayment(@RequestBody Payment payment) {
 		return paymentService.processPayment(payment);
 	}
-	@PostMapping("/process")
+	@PostMapping("/process-dto")
 	public Payment processPayment (@Valid @RequestBody PaymentDto paymentDto ) {
 		return null;
 		
