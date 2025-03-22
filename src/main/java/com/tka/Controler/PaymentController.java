@@ -31,7 +31,7 @@ public class PaymentController {
 	public Payment processPayment (@Valid @RequestBody PaymentDto paymentDto ) {
 		Payment payment = new Payment();
 		payment.setBookingId(paymentDto).getBookingId()
-		
+		return ;
 		
 	}
 	
