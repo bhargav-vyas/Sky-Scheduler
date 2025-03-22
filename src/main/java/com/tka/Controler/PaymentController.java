@@ -29,7 +29,9 @@ public class PaymentController {
 	}
 	@PostMapping("/process-dto")
 	public Payment processPayment (@Valid @RequestBody PaymentDto paymentDto ) {
-		return null;
+		Payment payment = new Payment();
+		payment.setBookingId(paymentDto).getBookingId()
+		return ;
 		
 	}
 	
