@@ -26,7 +26,6 @@ public class PaymentService {
 
 @Transactional
 	public Payment getpaymentById(Long id) {
-		
 		return paymentRepository.getById(id);
 	}
 
