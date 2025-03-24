@@ -20,7 +20,7 @@ public class FlightConroler {
 	@Autowired
 	private FlightService flightService;
 	
-	@PreAuthorize("hasRole('ADMIN')")
+//	@PreAuthorize("hasRole('ADMIN')")
 	@PostMapping("/create")
 	public Flight addFlight(@RequestBody Flight flight) {
 		return flightService.addFlight(flight);
