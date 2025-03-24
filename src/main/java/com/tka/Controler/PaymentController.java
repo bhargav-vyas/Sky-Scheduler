@@ -13,9 +13,8 @@ import com.tka.Model.Payment;
 import com.tka.Service.PaymentService;
 import com.tka.dto.PaymentDto;
 
-import jakarta.transaction.Transactional;
+
 import jakarta.validation.Valid;
-import org.springframework.transaction.annotation.Transactional;
 @RestController
 @RequestMapping("/payments")
 public class PaymentController {
@@ -29,7 +28,7 @@ public class PaymentController {
 		return paymentService.processPayment(payment);
 	}	
 	@GetMapping("/{id}")
-	@Transactional(readOnly = true) 
+ 
 	public Payment getpaymentById(@PathVariable Long  id) {
 		return paymentService.getpaymentById(id);
 	}
