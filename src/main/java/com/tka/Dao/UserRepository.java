@@ -12,4 +12,6 @@ public interface UserRepository extends JpaRepository<Users, Long> {
 
 	Optional<Users> findByUsername(String username);
 
+//	Users getalluser(Users users);
+
 }

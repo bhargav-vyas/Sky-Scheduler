@@ -22,6 +22,11 @@ public class UserService {
 		return userRepository.findByUsername(username);
 	}
 
+//	public Users getallUser(Users users) {
+//		
+//		return userRepository.getalluser(users);
+//	}
+
 
 
 }

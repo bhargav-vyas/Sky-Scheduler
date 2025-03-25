@@ -3,6 +3,7 @@ package com.tka.Model;
 import java.security.Identity;
 
 import org.springframework.boot.autoconfigure.web.WebProperties.Resources.Chain.Strategy;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -18,6 +19,7 @@ import lombok.NoArgsConstructor;
 @Table(name ="flights")
 @NoArgsConstructor
 @AllArgsConstructor
+@CrossOrigin(origins = "http://localhost:3000") 
 public class Flight {
 	@Id
 	@GeneratedValue (strategy =  GenerationType.IDENTITY)

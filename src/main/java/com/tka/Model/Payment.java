@@ -1,5 +1,7 @@
 package com.tka.Model;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,6 +14,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@CrossOrigin(origins = "http://localhost:3000") 
 public class Payment {
 	@Id
 	@GeneratedValue (strategy =  GenerationType.IDENTITY)
