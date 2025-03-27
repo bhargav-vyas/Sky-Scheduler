@@ -24,7 +24,7 @@ public class PaymentController {
 	
 	
 	@PostMapping("/process/{bookingid}")
-	public Payment processPayment(@RequestBody Payment payment , @PathVariable Long id) {
+	public Payment processPayment(@RequestBody Payment payment , @PathVariable Long bokingId) {
 		return paymentService.processPayment(payment);
 	}	
 	@GetMapping("/{id}")
