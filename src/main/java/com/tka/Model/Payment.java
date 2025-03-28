@@ -19,7 +19,7 @@ public class Payment {
 	@Id
 	@GeneratedValue (strategy =  GenerationType.IDENTITY)
 	private Long id;
-	private Long bookingid;
+	private Long bookingId;
 	private Long PaymentMethod;
 	private double amount;
 	private String status;
