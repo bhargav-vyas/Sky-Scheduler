@@ -1,5 +1,6 @@
 package com.tka.Controler;
 import java.net.PasswordAuthentication;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,9 +30,9 @@ public class UserController {
 	public Optional<Users>  getUser(@PathVariable String username){
 		return userService.getallUser(username);
 	}
-//	@GetMapping("getAllUser")
-//	public Users getalluser(@RequestBody Users users ) {
-//		return userService.getallUser(users);
-//	}
+	@GetMapping("/getAllUser")
+	public List<Users> getalluser() {
+		return userService.getallUser();
+	}
 
 }
