@@ -30,6 +30,10 @@ public class FlightConroler {
 	public List<Flight> searchFlights(@RequestParam String departureAirport,@RequestParam String arrivalAirport){
 		return flightService.searchFlights(departureAirport, arrivalAirport);	
 	}
+	@GetMapping("/getallflight")
+	public List<Flight> getallflight(){
+	 return flightService.getallflight();
+	}
 	
 	
 	

@@ -21,6 +21,10 @@ public class FlightService {
 	public Flight addFlight(Flight flight) {
 		return  flightRepository.save(flight);
 	}
+
+	public List<Flight> getallflight() {
+		return flightRepository.findAll();
+	}
 	
 
 }
