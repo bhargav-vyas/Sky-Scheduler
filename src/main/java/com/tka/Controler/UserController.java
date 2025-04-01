@@ -30,9 +30,9 @@ public class UserController {
 	public Optional<Users>  getUser(@PathVariable String username){
 		return userService.getallUser(username);
 	}
-//	@GetMapping("/getAllUser")
-//	public List<Users> getalluser() {
-//		return userService.getallUser();
-//	}
+	@GetMapping("/getAllUser")
+	public List<Users> getalluser() {
+		return userService.getallUser();
+	}
 
 }
