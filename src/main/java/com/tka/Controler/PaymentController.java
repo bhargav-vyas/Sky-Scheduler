@@ -28,7 +28,6 @@ public class PaymentController {
 		return paymentService.processPayment(payment);
 	}	
 	@GetMapping("/{id}")
- 
 	public Payment getpaymentById(@PathVariable Long  id) {
 		return paymentService.getpaymentById(id);
 	}
